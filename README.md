@@ -35,25 +35,25 @@ The BIG-KP brain imaging traits consist of three imaging modalities:
 
 The UKB-Oxford imaging traits consist of four imaging modalities and a number of sub-modalities:
 - Structural MRI (sMRI), 1437 traits
-* FIRST ([Category 1102](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1102)), 15 traits
-* FAST ([Category 1101]()), 139 traits
-* Freesurfer ASEG ([Category 190]()), 95 traits
-* Freesurfer BA exvivo ([Category 195]()), 84 traits
-* Freesurfer a2009s ([Category 197]()), 444 traits
-* Freesurfer DKT ([Category 196]()), 186 traits
-* Freesurfer desikan gw ([Category 194]()), 70 traits
-* Freesurfer desikan pial ([Category 193]()), 66 traits
-* Freesurfer desikan white ([Category 192]()), 202 traits
-* Freesurfer subsegmentation ([Category 191]()), 121 traits
-* Regional T2* ([Category 109]()), 14 traits
-* white matter hyperintensity volume ([Category 112]()), 1 trait
+    * FIRST ([Category 1102](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1102)), 15 traits
+    * FAST ([Category 1101](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1101)), 139 traits
+    * Freesurfer ASEG ([Category 190](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=190)), 95 traits
+    * Freesurfer BA exvivo ([Category 195](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=195)), 84 traits
+    * Freesurfer a2009s ([Category 197](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=197)), 444 traits
+    * Freesurfer DKT ([Category 196](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=196)), 186 traits
+    * Freesurfer desikan gw ([Category 194](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=194)), 70 traits
+    * Freesurfer desikan pial ([Category 193](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=193)), 66 traits
+    * Freesurfer desikan white ([Category 192](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=192)), 202 traits
+    * Freesurfer subsegmentation ([Category 191](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=191)), 121 traits
+    * Regional T2* ([Category 109](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=109)), 14 traits
+    * white matter hyperintensity volume ([Category 112](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=112)), 1 trait
 - Diffusion MRI (dMRI), 675 traits
-    * TBSS ([Category 134]()), 432 traits
-    * ProbtrackX ([Category 135]()), 243 traits
-- Task fMRI (tfMRI) ([Category 106]()), 16 traits
+    * TBSS ([Category 134](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=134)), 432 traits
+    * ProbtrackX ([Category 135](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=135)), 243 traits
+- Task fMRI (tfMRI) ([Category 106](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=106)), 16 traits
 - Resting fMRI (rfMRI) ([Category 111](https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=111)), 1777 traits
-* ICA-based rfMRI activity, 76 traits
-* ICA-based rfMRI connectivty, 1701 traits
+    * ICA-based rfMRI activity, 76 traits
+    * ICA-based rfMRI connectivty, 1701 traits
 
 
 We obtained the PRS weights by 
