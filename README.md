@@ -34,8 +34,8 @@ The BIG-KP brain imaging traits consist of three imaging modalities:
 - Resting fMRI traits (activity and functional connectivity), 90 traits.
 
 The UKB-Oxford imaging traits consist of four imaging modalities and a number of sub-modalities:
-- Structural MRI (sMRI), 1437 traits
-* FIRST ([Category 1102](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1102)), 15 traits
+* Structural MRI (sMRI), 1437 traits
+** FIRST ([Category 1102](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1102)), 15 traits
 * FAST ([Category 1101]()), 139 traits
 * Freesurfer ASEG ([Category 190]()), 95 traits
 * Freesurfer BA exvivo ([Category 195]()), 84 traits
@@ -47,9 +47,9 @@ The UKB-Oxford imaging traits consist of four imaging modalities and a number of
 * Freesurfer subsegmentation ([Category 191]()), 121 traits
 * Regional T2* ([Category 109]()), 14 traits
 * white matter hyperintensity volume ([Category 112]()), 1 trait
-- Diffusion MRI (dMRI), 675 traits
-* TBSS ([Category 134]()), 432 traits
-* ProbtrackX ([Category 135]()), 243 traits
+* Diffusion MRI (dMRI), 675 traits
+** TBSS ([Category 134]()), 432 traits
+** ProbtrackX ([Category 135]()), 243 traits
 - Task fMRI (tfMRI) ([Category 106]()), 16 traits
 - Resting fMRI (rfMRI) ([Category 111](https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=111)), 1777 traits
 * ICA-based rfMRI activity, 76 traits
