@@ -1,6 +1,6 @@
 # IPRS: Imaging Polygenic Risk Scores in UK Biobank
 
-IPRS is a project for the development and sharing of polygenic risk scores for 4,206 brain imaging-derived phenotypes for 400,000 [UK Biobank](https://www.ukbiobank.ac.uk/) subjects not participating in the imaging study. 
+IPRS is a project for the development and sharing of polygenic risk scores for 4,206 brain imaging-derived phenotypes for all subjects in the [UK Biobank study](https://www.ukbiobank.ac.uk/) phases 1 to 3 data releases, 
 
 ## Overview
 UK Biobank (UKB) brain imaging data are extremely useful for a wide range of clinical research and applications. However, due to the cost and difficulty of obtaining data, the UKB imaging study will be limited to 100,000 participants, leaving the majority (80%) of half a million UKB subjects without imaging data. Because imaging-derived phenotypes (IDPs) are heritable and genetic information is available for most UKB subjects, genetic data can predict IDPs for UKB subjects outside of the imaging study. 
@@ -17,23 +17,23 @@ Our results suggest that genetic prediction through PRS may provide an economica
 ## Tutorial
 ### Individual-level PRS generation
 The individual-level PRS can be generated using our shared PRS weights at [Zenodo](https://zenodo.org/) via [PLINK 2.0](https://www.cog-genomics.org/plink/2.0/). The following is an example
-
 ```{bash}
 $ plink \
     --bfile PATH_TO_BFILE_WITHOUT_EXTENSION \
-    --score PATH_TO_PRS_WEIGHTS \
+    --score PATH_TO_PRS_WEIGHTS 2 4 6 \
     --out PATH_TO_OUTPUT_WITHOUT_EXTENSION
 ```
-where `PATH_TO_BFILE_WITHOUT_EXTENSION` is the path to the bfiles (`bim,bed,fam`) without the extensions, `PATH_TO_PRS_WEIGHTS` is the path to our shared PRS weights, and `PATH_TO_OUTPUT_WITHOUT_EXTENSION` is the desired path for the individual-level PRS. 
+where `PATH_TO_BFILE_WITHOUT_EXTENSION` is the path to the genotyping data in the PLINK binary format ({`bim,bed,fam`}) without the extensions, `PATH_TO_PRS_WEIGHTS` is the path to our shared PRS weights, and `PATH_TO_OUTPUT_WITHOUT_EXTENSION` is the desired path for the individual-level PRS. `2 4 6` after `PATH_TO_PRS_WEIGHTS` indicates that the 2nd column of `PATH_TO_PRS_WEIGHTS` contains rs ID, the 4th column of `PATH_TO_PRS_WEIGHTS` contains the allele codes (A1), and the 6th column of `PATH_TO_PRS_WEIGHTS` contains the effect size estimates. 
 
 
 
 
 ## Data Availability
-PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https://zenodo.org/). The individual-level data used in this study can be obtained from https://www.ukbiobank.ac.uk/.
+Our PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https://zenodo.org/). The individual-level genotyping data used in this study can be obtained from https://www.ukbiobank.ac.uk/.
 
 
 
 
-
+## References
+...
 
