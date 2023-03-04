@@ -13,7 +13,7 @@ Our results suggest that genetic prediction through PRS may provide an economica
 
 ## Tutorial
 ### Individual-level PRS generation
-The individual-level PRS can be generated using our shared PRS weights at [Zenodo](https://zenodo.org/) via [PLINK 2.0](https://www.cog-genomics.org/plink/2.0/). The following is an example
+The individual-level PRS can be generated using our shared PRS weights at [Zenodo](https://zenodo.org/) via [PLINK 2.0](https://www.cog-genomics.org/plink/2.0/). The following is an example:
 ```{bash}
 $ plink \
     --bfile PATH_TO_BFILE_WITHOUT_EXTENSION \
@@ -55,10 +55,11 @@ The UKB-Oxford imaging traits consist of four imaging modalities and a number of
     * ICA-based rfMRI activity, 76 traits
     * ICA-based rfMRI connectivty, 1701 traits
 
+### GWAS summary statistics
+We performed GWAS for the 4,206 brain imaging traits via [GCTA fastGWA](https://yanglab.westlake.edu.cn/software/gcta/#Overview) using all the unrelated UKB individuals of white British ancestry with brain imaging measurements (on average $n=34,224$). 
 
-We obtained the PRS weights by 
-
-applying the [PRS-CS method](https://github.com/getian107/PRScs) 
+### PRS development
+We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS method](https://github.com/getian107/PRScs) to the GWAS summary statistics mentioned above. We then generated the individual-level PRS for all UKB subjects ($n=488,371$) using the PRS weights via PLINK. The PRS weights are publicly available on [Zenodo](https://zenodo.org/). 
 
 
 
