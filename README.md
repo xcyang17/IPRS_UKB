@@ -7,7 +7,7 @@ UK Biobank (UKB) brain imaging data are extremely useful for a wide range of cli
 
 Here we systematically develop and evaluate biobank-scale genetic polygenic risk scores (PRS) for 4,206 IDPs from multiple brain imaging modalities and processing pipelines. The majority of IDPs (64.76%, 2,774/4,206) were significantly predicted by PRS developed by subjects with both genetic and imaging data. Moreover, genetically predicted IDPs detected associations with a wide variety of complex traits and diseases, with the patterns being consistent across different imaging pipelines. 
 
-Our results suggest that genetic prediction through PRS may provide an economical and practical solution to make the UKB imaging study more beneficial to a broader population. Our PRS data resources have been made publicly available through [Zenodo](https://zenodo.org/ and will be returned to the UK Biobank. 
+Our results suggest that genetic prediction through PRS may provide an economical and practical solution to make the UKB imaging study more beneficial to a broader population. Our PRS data resources have been made publicly available through [Zenodo](https://zenodo.org/) and will be returned to the UK Biobank. 
 
 
 ## Website
@@ -16,9 +16,15 @@ Our results suggest that genetic prediction through PRS may provide an economica
 
 ## Tutorial
 ### Individual-level PRS generation
+The individual-level PRS can be generated using our shared PRS weights at [Zenodo](https://zenodo.org/) via [PLINK 2.0](https://www.cog-genomics.org/plink/2.0/). The following is an example
 
-
-
+```{bash}
+$ plink \
+    --bfile PATH_TO_BFILE_WITHOUT_EXTENSION \
+    --score PATH_TO_PRS_WEIGHTS \
+    --out PATH_TO_OUTPUT_WITHOUT_EXTENSION
+```
+where `PATH_TO_BFILE_WITHOUT_EXTENSION` is the path to the bfiles (`bim,bed,fam`) without the extensions, `PATH_TO_PRS_WEIGHTS` is the path to our shared PRS weights, and `PATH_TO_OUTPUT_WITHOUT_EXTENSION` is the desired path for the individual-level PRS. 
 
 
 
