@@ -29,34 +29,34 @@ Here we provide some more details about the development of the PRS weights.
 The data used in our study was obtained from the UK Biobank (UKB) study, which recruited around 500,000 individuals between the ages of 40 and 69 between 2006 and 2010 (https://www.ukbiobank.ac.uk/). The ethics approval of the UKB study was obtained from the North West Multicentre Research Ethics Committee (approval number: 11/NW/0382). We obtained a total of 4,206 brain imaging-derived phenotypes (IDPs) from the UKB study (http://www.ukbiobank.ac.uk/resources/), which consisted of 301 [BIG-KP](https://bigkp.org/) brain imaging traits and 3,905 [UKB-Oxford](https://open.win.ox.ac.uk/ukbiobank/big40/) brain imaging traits.
 
 The BIG-KP brain imaging traits consist of three imaging modalities: 
-- Regional brain volumes, 101 traits
-- Tract-averaged diffusion tensor imaging (DTI) parameters, 110 traits
+- Regional brain volumes, 101 traits,
+- Tract-averaged diffusion tensor imaging (DTI) parameters, 110 traits,
 - Resting fMRI traits (activity and functional connectivity), 90 traits.
 
 The UKB-Oxford imaging traits consist of four imaging modalities and a number of sub-modalities:
 - Structural MRI (sMRI), 1437 traits
-    * FIRST ([Category 1102](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1102)), 15 traits
-    * FAST ([Category 1101](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1101)), 139 traits
-    * Freesurfer ASEG ([Category 190](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=190)), 95 traits
-    * Freesurfer BA exvivo ([Category 195](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=195)), 84 traits
-    * Freesurfer a2009s ([Category 197](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=197)), 444 traits
-    * Freesurfer DKT ([Category 196](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=196)), 186 traits
-    * Freesurfer desikan gw ([Category 194](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=194)), 70 traits
-    * Freesurfer desikan pial ([Category 193](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=193)), 66 traits
-    * Freesurfer desikan white ([Category 192](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=192)), 202 traits
-    * Freesurfer subsegmentation ([Category 191](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=191)), 121 traits
-    * Regional T2* ([Category 109](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=109)), 14 traits
-    * white matter hyperintensity volume ([Category 112](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=112)), 1 trait
+    * FIRST ([Category 1102](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1102)), 15 traits,
+    * FAST ([Category 1101](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=1101)), 139 traits,
+    * Freesurfer ASEG ([Category 190](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=190)), 95 traits,
+    * Freesurfer BA exvivo ([Category 195](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=195)), 84 traits,
+    * Freesurfer a2009s ([Category 197](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=197)), 444 traits,
+    * Freesurfer DKT ([Category 196](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=196)), 186 traits,
+    * Freesurfer desikan gw ([Category 194](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=194)), 70 traits,
+    * Freesurfer desikan pial ([Category 193](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=193)), 66 traits,
+    * Freesurfer desikan white ([Category 192](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=192)), 202 traits,
+    * Freesurfer subsegmentation ([Category 191](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=191)), 121 traits,
+    * Regional T2* ([Category 109](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=109)), 14 traits,
+    * white matter hyperintensity volume ([Category 112](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=112)), 1 trait.
 - Diffusion MRI (dMRI), 675 traits
-    * TBSS ([Category 134](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=134)), 432 traits
-    * ProbtrackX ([Category 135](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=135)), 243 traits
-- Task fMRI (tfMRI) ([Category 106](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=106)), 16 traits
-- Resting fMRI (rfMRI) ([Category 111](https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=111)), 1777 traits
-    * ICA-based rfMRI activity, 76 traits
-    * ICA-based rfMRI connectivty, 1701 traits
+    * TBSS ([Category 134](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=134)), 432 traits,
+    * ProbtrackX ([Category 135](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=135)), 243 traits.
+- Task fMRI (tfMRI) ([Category 106](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=106)), 16 traits.
+- Resting fMRI (rfMRI) ([Category 111](https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=111)), 1777 traits,
+    * ICA-based rfMRI activity, 76 traits,
+    * ICA-based rfMRI connectivty, 1701 traits.
 
 ### GWAS summary statistics
-We performed GWAS for the 4,206 brain imaging traits via [GCTA fastGWA](https://yanglab.westlake.edu.cn/software/gcta/#Overview) using all the unrelated UKB individuals of white British ancestry with brain imaging measurements (on average $n=34,224$). 
+We performed genome-wide association studies (GWAS) for the 4,206 brain imaging traits via [GCTA fastGWA](https://yanglab.westlake.edu.cn/software/gcta/#Overview) using all the unrelated UKB individuals of white British ancestry with brain imaging measurements (on average $n=34,224$). 
 
 ### PRS development
 We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS method](https://github.com/getian107/PRScs) to the GWAS summary statistics mentioned above. We then generated the individual-level PRS for all UKB subjects ($n=488,371$) using the PRS weights via PLINK. The PRS weights are publicly available on [Zenodo](https://zenodo.org/). 
@@ -65,16 +65,13 @@ We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS m
 
 
 ## Website
-...?
-
-
+https://xcyang17.github.io/IPRS_UKB/
 
 
 
 
 ## Data Availability
 Our PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https://zenodo.org/). The individual-level genotyping data used in this study can be obtained from https://www.ukbiobank.ac.uk/.
-
 
 
 
