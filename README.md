@@ -46,7 +46,7 @@ The UKB-Oxford imaging traits consist of four imaging modalities and a number of
     * Freesurfer desikan white ([Category 192](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=192)), 202 traits,
     * Freesurfer subsegmentation ([Category 191](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=191)), 121 traits,
     * Regional T2* ([Category 109](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=109)), 14 traits,
-    * white matter hyperintensity volume ([Category 112](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=112)), 1 trait.
+    * White matter hyperintensity volume ([Category 112](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=112)), 1 trait.
 - Diffusion MRI (dMRI), 675 traits
     * TBSS ([Category 134](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=134)), 432 traits,
     * ProbtrackX ([Category 135](https://biobank.ctsu.ox.ac.uk/crystal/label.cgi?id=135)), 243 traits.
