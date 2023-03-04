@@ -63,13 +63,6 @@ We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS m
 
 
 
-
-## Website
-https://xcyang17.github.io/IPRS_UKB/
-
-
-
-
 ## Data Availability
 Our PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https://zenodo.org/). The individual-level genotyping data used in this study can be obtained from https://www.ukbiobank.ac.uk/.
 
