@@ -18,9 +18,9 @@ The individual-level PRS can be generated using our shared PRS weights at [Zenod
 $ plink \
     --bfile PATH_TO_BFILE_WITHOUT_EXTENSION \
     --score PATH_TO_PRS_WEIGHTS 2 4 6 \
-    --out PATH_TO_OUTPUT_WITHOUT_EXTENSION
+    --out PATH_TO_OUTPUT
 ```
-where `PATH_TO_BFILE_WITHOUT_EXTENSION` is the path to the genotyping data in the PLINK binary format ({`bim,bed,fam`}) without the extensions, `PATH_TO_PRS_WEIGHTS` is the path to our shared PRS weights, and `PATH_TO_OUTPUT_WITHOUT_EXTENSION` is the desired path for the individual-level PRS. `2 4 6` indicates that the 2nd column of `PATH_TO_PRS_WEIGHTS` contains rs ID, the 4th column of `PATH_TO_PRS_WEIGHTS` contains the allele codes (A1), and the 6th column of `PATH_TO_PRS_WEIGHTS` contains the effect size estimates. See details about PLINK linear scoring [here](https://www.cog-genomics.org/plink/2.0/score).
+where `PATH_TO_BFILE_WITHOUT_EXTENSION` is the path to the genotyping data in the PLINK binary format ({`bim,bed,fam`}) without the extensions, `PATH_TO_PRS_WEIGHTS` is the path to our shared PRS weights, and `PATH_TO_OUTPUT` is the desired path for the individual-level PRS. `2 4 6` indicates that the 2nd column of `PATH_TO_PRS_WEIGHTS` contains rs ID, the 4th column of `PATH_TO_PRS_WEIGHTS` contains the allele codes (A1), and the 6th column of `PATH_TO_PRS_WEIGHTS` contains the effect size estimates. See details about PLINK linear scoring [here](https://www.cog-genomics.org/plink/2.0/score).
 
 
 ## Methods
