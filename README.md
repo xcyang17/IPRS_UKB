@@ -64,10 +64,10 @@ We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS m
 
 
 ## Data Availability
-Our PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https://zenodo.org/). The individual-level genotyping data used in this study can be obtained from https://www.ukbiobank.ac.uk/.
+Our PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https://doi.org/10.5281/zenodo.7709787). The individual-level genotyping data used in this study can be obtained from https://www.ukbiobank.ac.uk/.
 
 
 
 ## References
-...
+Yang, Xiaochen, et al. "[Developing and sharing polygenic risk scores for 4,206 brain imaging-derived phenotypes for 400,000 UK Biobank subjects not participating in the imaging study.](https://www.medrxiv.org/content/10.1101/2023.04.18.23288769v1)" medRxiv (2023): 2023-04.
 
