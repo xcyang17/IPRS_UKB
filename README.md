@@ -8,12 +8,12 @@ UK Biobank (UKB) brain imaging data are extremely useful for a wide range of cli
 
 Here we systematically develop and evaluate biobank-scale genetic polygenic risk scores for 4,206 IDPs from multiple brain imaging modalities and processing pipelines. The majority of IDPs (64.76%, 2,774/4,206) were significantly predicted by PRS developed by subjects with both genetic and imaging data. Moreover, genetically predicted IDPs detected associations with a wide variety of complex traits and diseases, with the patterns being consistent across different imaging pipelines. 
 
-Our results suggest that genetic prediction through PRS may provide an economical and practical solution to make the UKB imaging study more beneficial to a broader population. Our PRS data resources have been made publicly available through [Zenodo](https://zenodo.org/) and will be returned to the UK Biobank. 
+Our results suggest that genetic prediction through PRS may provide an economical and practical solution to make the UKB imaging study more beneficial to a broader population. Our PRS data resources have been made publicly available through [Zenodo](https://doi.org/10.5281/zenodo.7709787) and will be returned to the UK Biobank. 
 
 
 ## Tutorial
 ### Individual-level PRS generation
-The individual-level PRS can be generated using our shared PRS weights at [Zenodo](https://zenodo.org/) via [PLINK 2.0](https://www.cog-genomics.org/plink/2.0/). The following is an example:
+The individual-level PRS can be generated using our shared PRS weights at [Zenodo](https://doi.org/10.5281/zenodo.7709787) via [PLINK 2.0](https://www.cog-genomics.org/plink/2.0/). The following is an example:
 ```{bash}
 $ plink \
     --bfile PATH_TO_BFILE_WITHOUT_EXTENSION \
@@ -59,7 +59,7 @@ The UKB-Oxford imaging traits consist of four imaging modalities and a number of
 We performed genome-wide association studies (GWAS) for the 4,206 brain imaging traits via [GCTA fastGWA](https://yanglab.westlake.edu.cn/software/gcta/#Overview) using all the unrelated UKB individuals of white British ancestry with brain imaging measurements (on average $n=34,224$). 
 
 ### PRS development
-We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS method](https://github.com/getian107/PRScs) to the GWAS summary statistics mentioned above. We then generated the individual-level PRS for all UKB subjects ($n=488,371$) using the PRS weights via PLINK. The PRS weights are publicly available on [Zenodo](https://zenodo.org/). 
+We obtained the polygenic profiles (i.e., PRS weights) by applying the [PRS-CS method](https://github.com/getian107/PRScs) to the GWAS summary statistics mentioned above. We then generated the individual-level PRS for all UKB subjects ($n=488,371$) using the PRS weights via PLINK. The PRS weights are publicly available on [Zenodo](https://doi.org/10.5281/zenodo.7709787). 
 
 
 
