@@ -69,5 +69,5 @@ Our PRS-CS weight of brain MRI traits can be freely downloaded at [Zenodo](https
 
 
 ## References
-Yang, Xiaochen, et al. "[Developing and sharing polygenic risk scores for 4,206 brain imaging-derived phenotypes for 400,000 UK Biobank subjects not participating in the imaging study.](https://www.medrxiv.org/content/10.1101/2023.04.18.23288769v1)" medRxiv (2023): 2023-04.
+Yang, Xiaochen, et al. "[Multi-organ imaging-derived polygenic indexes for brain and body health.](https://doi.org/10.1101/2023.04.18.23288769)" medRxiv (2024): 2024-06.
 
