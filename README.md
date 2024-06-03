@@ -1,6 +1,6 @@
-# IPRS: Imaging Polygenic Risk Scores in UK Biobank
+# IPRS: Multi-organ imaging-derived polygenic indexes for brain and body health
 
-IPRS is a project for the development and sharing of polygenic risk scores (PRS) for 4,206 brain imaging-derived phenotypes for 400,000 UK Biobank subjects not participating in the imaging study. 
+IPRS is a project for the development and sharing of polygenic risk scores (PRS) for 4,206 brain imaging-derived phenotypes and 169 body imaging-derived phenotypes for 400,000 UK Biobank subjects not participating in the imaging study. 
 
 
 ## Overview
